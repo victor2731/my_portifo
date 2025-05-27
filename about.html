@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - Victor</title>
+    <link rel="stylesheet" href="style.css">
+     <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</head>
+<body class="body">
+  <style>
+  .body {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 0;
+}
+
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+   margin-left: 7%;
+ margin-top: 150px;
+}
+
+
+.container {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+
+.text-content {
+  max-width: 900px;
+  font-size:18px;
+  letter-spacing: 1px;
+  color:aliceblue;
+  line-height: 24px;
+}
+
+
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  animation: moveUpDown 3s ease-in-out infinite alternate, fadeImages 15s infinite;
+  opacity: 0;
+}
+
+
+.image.guitar {
+  animation-delay: 0s, 0s;
+}
+.image.laptop {
+  animation-delay: 0s, 5s;
+}
+.image.pump {
+  animation-delay: 0s, 10s;
+}
+
+
+@keyframes moveUpDown {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-50px); }
+}
+
+
+@keyframes fadeImages {
+  0%, 13.33%   { opacity: 1; }
+  20%, 100%    { opacity: 0; }
+}
+
+
+  </style>
+    <div class="main">
+        <nav class="navbar">
+            <h1>Victor</h1>
+            <ul>
+               <li><button class="navbutton" onclick="navigateTo('index.html')">HOME</button></li>
+                <li><button class="navbutton" onclick="navigateTo('about.html')">ABOUT</button></li>
+                <li><button class="navbutton" onclick="navigateTo('projects.html')">PROJECTS</button></li>
+                <li><button class="navbutton" onclick="navigateTo('index.html')">CONTACT</button></li>
+            </ul>
+        </nav>
+
+
+        <div class="wrapper">
+            <!-- Image Animation -->
+            <div class="container">
+                <img src="guitar.png" alt="Guitar" class="image guitar">
+                <img src="laptop.png" alt="Laptop" class="image laptop">
+                <img src="pump.png" alt="Pumpjack" class="image pump">
+            </div>
+
+
+            <!-- Text Content -->
+            <div class="text-content">
+                <h1>About Me</h1>
+                <p><br><br>Hi, I’m M. Victor Babu, recent graduate in Petroleum Engineering from JNTUK,
+                   University College of Engineering, Kakinada. During my academics
+                   I’ve done internships at top companies like Reliance Industries Ltd and ONGC Eastern Offshore Asset,
+                    Kakinada, where I great knowledge related to production and reservoir engineering from industry experts. Apart
+                    from that, I’ve also taken up online courses like CS50 from Harvard and Reservoir Geomechanics from
+                    Stanford through edX. I’ve attended various workshops on well logging, hydraulic fracturing, EOR strategies,
+                    and more — all to enhance my knowledge in the field.
+
+
+                    <br><br>Outside academics, I’m also passionate about music. I love playing the guitar and it's something that
+                    helps me relax and express myself. Music has always been a big part of my life. Even though my background
+                    is in petroleum, I’ve developed a deep interest in the IT industry. I’ve been learning Python, web development,
+                    and data structures to explore opportunities in tech. I believe my mix of technical knowledge, creativity, and adaptability will help me
+                    thrive in both engineering and IT fields.</div>
+        </div>
+    </div>
+</body>
+</html>

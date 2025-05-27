@@ -1,0 +1,155 @@
+/* General Reset */
+*{
+    margin: 0;
+    padding: 0;
+    background-color: darkslategray;
+}
+.main {
+    width: 100%;
+    font-family: sans-serif;
+    background-color: darkslategray;
+
+
+}
+
+
+.navbar {
+    width: 86%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+.navbutton {
+   
+}
+.navbar h1{
+    margin-top: 30px;
+    margin-left: -5%;
+    font-size: 40px;
+    justify-content: left;
+    font-family: sans-serif;
+    color: aqua;
+}
+
+
+ul {
+    margin-top: 30px;
+    justify-content: right;
+}
+
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 36px;
+}
+
+
+.navbutton{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;  
+    color: rgb(244, 248, 248);
+    margin-top: -3%;
+    transition: .4s ease;
+    font-weight:bold;
+    background-color: #14033c00;
+    cursor: pointer;
+    margin:10px;
+    padding-left:10px;
+    padding-right:10px;
+    width:100px;
+    border-radius:10px;
+}
+
+
+.navbutton:hover{
+    color: rgb(4, 246, 246);
+}
+
+
+.info {
+    margin-left: 7%;
+    margin-top: 250px;
+}
+.info h1{
+    font-size: 55px;
+    color: aqua;
+    font-family: sans-serif;
+}
+
+
+.info h3{
+    font-size:18px;
+    letter-spacing: 1px;
+    color:aliceblue;
+    line-height: 24px;
+}
+
+
+.image{
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+
+
+.image img{
+    position: absolute;
+    height: 140%;
+    left: 40%;
+    transform: translate(-55%);
+    bottom: 0;
+    transition: left 2s ease;
+}
+
+
+.image:hover .men{
+    left: 55%;
+
+
+}
+.contact {
+    text-decoration: none;
+    margin-left: 7%;
+    margin-top: 30px;    
+}
+.contact {
+    display: flex;
+    gap: 40px;
+    padding: 10px;
+}
+.contact a {
+    text-decoration: none;
+    color: #272626;
+    font-size: 34px;
+    transition: color 0.3s;
+}
+.contact a:hover {
+    color: #007BFF;
+}
+
+
+
+
+
+
+
+
+.project {
+    margin-left: 7%;
+    margin-top: 20px;
+}
+
+
+.project h1{
+    color:aqua;
+}
+.project h2{
+    color:rgb(255, 255, 255);
+}
+.project h3{
+    color:rgb(255, 255, 255);
+}
